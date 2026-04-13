@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Get Your News · Redirecting...</title>
+  <script>
+    // Línguas disponíveis no website (adicionar aqui ao criar nova pasta)
+    var LANGS = ["pt"];
+    var DEFAULT = "pt";
+
+    // Detetar língua do browser (ex: "pt-PT" → "pt", "en-US" → "en")
+    var browserLangs = navigator.languages || [navigator.language || DEFAULT];
+    var chosen = DEFAULT;
+
+    for (var i = 0; i < browserLangs.length; i++) {
+      var code = browserLangs[i].split("-")[0].toLowerCase();
+      if (LANGS.indexOf(code) !== -1) {
+        chosen = code;
+        break;
+      }
+    }
+
+    window.location.replace(chosen + "/");
+  </script>
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=pt/" />
+  </noscript>
+</head>
+<body>
+  <p>Redirecting... <a href="pt/">Click here</a> if not redirected.</p>
+</body>
+</html>

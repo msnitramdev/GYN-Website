@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Recebe as melhores notícias de IA, Crypto, Futebol, Mundo e Economia diretamente no Telegram, assim que detetamos. Resumos inteligentes, sem ruído." />
+  <title>Get Your News · Notícias que importam, direto no Telegram</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="icon" type="image/x-icon" href="../logo-circle.png">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="logo">GYN<span class="logo-dot">.</span></a>
+      <div class="nav-links">
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#temas">Temas</a>
+        <a href="#precos">Preços</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <a href="https://t.me/GetYourNews_GYNBot" target="_blank" class="btn btn-primary nav-cta">Começar grátis</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#como-funciona" class="mobile-link">Como funciona</a>
+      <a href="#temas" class="mobile-link">Temas</a>
+      <a href="#precos" class="mobile-link">Preços</a>
+      <a href="#faq" class="mobile-link">FAQ</a>
+      <a href="https://t.me/GetYourNews_GYNBot" target="_blank" class="btn btn-primary">Começar grátis</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-badge">
+      <span class="badge-dot"></span>
+      Notícias que importam, direto no Telegram
+    </div>
+    <h1 class="hero-title">
+      As notícias que importam,<br />
+      <span class="gradient-text">sem teres de procurar.</span>
+    </h1>
+    <p class="hero-subtitle">
+      IA, Crypto, Futebol, Mundo, Economia e mais. Resumos claros, sem ruído,
+      entregues no teu Telegram, sem esperares.
+    </p>
+    <div class="hero-ctas">
+      <a href="https://t.me/GetYourNews_GYNBot" target="_blank" class="btn btn-primary btn-lg">
+        Experimentar grátis · 7 dias
+      </a>
+      <a href="#precos" class="btn btn-ghost btn-lg">Ver planos</a>
+    </div>
+    <p class="hero-note">Sem compromisso. Cancela quando quiseres.</p>
+
+    <div class="hero-preview">
+      <div class="tg-card">
+        <div class="tg-header">
+          <!-- <div class="tg-avatar">GYN</div> -->
+		  <img src="../logo-circle.png" alt="GYN"  style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover;">
+          <div>
+            <div class="tg-name">GetYourNews</div>
+            <div class="tg-status">bot</div>
+          </div>
+          <div class="tg-time">agora</div>
+        </div>
+        <div class="tg-message">
+          <div class="tg-tag">🤖 Inteligência Artificial</div>
+          <div class="tg-msg-title">OpenAI lança novo modelo com capacidades de raciocínio avançado</div>
+          <div class="tg-msg-body">O novo modelo supera os anteriores em tarefas matemáticas e de programação, com 40% menos erros. Os analistas preveem impacto direto nas ferramentas de desenvolvimento de software.</div>
+          <div class="tg-msg-footer">há 2 min</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="section" id="como-funciona">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Simples assim</span>
+        <h2>Como funciona</h2>
+        <p>Em menos de 2 minutos estás a receber notícias.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">01</div>
+          <div class="step-icon">🎯</div>
+          <h3>Escolhe os teus temas</h3>
+          <p>IA, Crypto, Futebol, Mundo, Economia e mais. Tu decides o que queres acompanhar.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-number">02</div>
+          <div class="step-icon">💳</div>
+          <h3>Subscreve o plano</h3>
+          <p>7 dias grátis, sem compromisso. Cancela a qualquer momento antes do fim do trial.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-number">03</div>
+          <div class="step-icon">⚡</div>
+          <h3>Recebe sem esforço</h3>
+          <p>Sem abrir apps, sem scroll. As notícias chegam-te ao Telegram, prontas a ler.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEMAS -->
+  <section class="section section-dark" id="temas">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Categorias</span>
+        <h2>Temas disponíveis</h2>
+        <p>Começa com o que te interessa. Mais temas em breve.</p>
+      </div>
+      <div class="topics-carousel" id="topicsCarousel">
+        <button class="carousel-arrow carousel-arrow-left" id="carouselPrev" aria-label="Anterior">‹</button>
+        <div class="carousel-viewport">
+          <div class="topics-track" id="topicsTrack">
+            <div class="topic-card">
+              <div class="topic-icon">🤖</div>
+              <h3>Inteligência Artificial</h3>
+              <p>Novos modelos, lançamentos, investigação e impacto da IA no mundo. Do GPT ao Gemini, passando por tudo o que muda o setor.</p>
+              <div class="topic-badge">Em tempo real</div>
+            </div>
+            <div class="topic-card topic-card-featured">
+              <div class="topic-featured-label">Trending</div>
+              <div class="topic-icon">🌐</div>
+              <h3>Crypto</h3>
+              <p>Bitcoin, Ethereum, altcoins, regulação e mercados. As notícias que movem os preços, antes do mercado reagir.</p>
+              <div class="topic-badge">Em tempo real</div>
+            </div>
+            <div class="topic-card">
+              <div class="topic-icon">⚽</div>
+              <h3>Primeira Liga</h3>
+              <p>Resultados, transferências, lesões e polémicas. Tudo sobre o futebol português sem teres de andar a procurar.</p>
+              <div class="topic-badge">Em tempo real</div>
+            </div>
+            <div class="topic-card">
+              <div class="topic-icon">🌍</div>
+              <h3>Mundo</h3>
+              <p>Guerras, eleições, diplomacia e crises globais. O que acontece no mundo, resumido e sem ruído, para saberes o que importa.</p>
+              <div class="topic-badge">Em tempo real</div>
+            </div>
+            <div class="topic-card">
+              <div class="topic-icon">📈</div>
+              <h3>Economia</h3>
+              <p>Taxas de juro, inflação, mercados e decisões do BCE. O que afeta o teu bolso, explicado de forma clara e direta.</p>
+              <div class="topic-badge">Em tempo real</div>
+            </div>
+            <div class="topic-card">
+              <div class="topic-icon">⚽</div>
+              <h3>Futebol Internacional</h3>
+              <p>Champions League, Premier League, La Liga e transferências. O melhor do futebol mundial, sem sair do Telegram.</p>
+              <div class="topic-badge">Em tempo real</div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-arrow carousel-arrow-right" id="carouselNext" aria-label="Próximo">›</button>
+      </div>
+      <div class="carousel-dots" id="carouselDots"></div>
+      <p class="topics-note">Mais categorias a caminho. Sugere as tuas no bot com /suggest</p>
+    </div>
+  </section>
+
+  <!-- PREÇOS -->
+  <section class="section" id="precos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Preços</span>
+        <h2>Simples e transparente</h2>
+        <p>7 dias grátis em qualquer plano. Sem surpresas.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-discount-badge">Lançamento</div>
+          <div class="pricing-name">Basic</div>
+          <div class="pricing-price">
+            <span class="pricing-amount">2,99€</span>
+            <span class="pricing-period">/mês</span>
+          </div>
+          <div class="pricing-trial">7 dias grátis</div>
+          <ul class="pricing-features">
+            <li><span class="check">✓</span> Até 2 temas à tua escolha</li>
+            <li><span class="check">✓</span> Notícias sem esperares</li>
+            <li><span class="check">✓</span> Resumos com IA</li>
+            <li><span class="check">✓</span> Entrega no Telegram</li>
+          </ul>
+          <a href="https://t.me/GetYourNews_GYNBot" target="_blank" class="btn btn-outline btn-full">Começar grátis</a>
+        </div>
+        <div class="pricing-card pricing-card-featured">
+          <div class="pricing-featured-label">Recomendado</div>
+          <div class="pricing-discount-badge">Lançamento</div>
+          <div class="pricing-name">Pro</div>
+          <div class="pricing-price">
+            <span class="pricing-amount">5,99€</span>
+            <span class="pricing-period">/mês</span>
+          </div>
+          <div class="pricing-trial">7 dias grátis</div>
+          <ul class="pricing-features">
+		    <li><span class="check">✓</span> Acesso a novos temas</li>
+            <li><span class="check">✓</span> Temas ilimitados</li>
+            <li><span class="check">✓</span> Notícias sem esperares</li>
+            <li><span class="check">✓</span> Resumos com IA</li>
+            <li><span class="check">✓</span> Entrega no Telegram</li>
+          </ul>
+          <a href="https://t.me/GetYourNews_GYNBot" target="_blank" class="btn btn-primary btn-full">Começar grátis</a>
+        </div>
+      </div>
+      <p class="pricing-note">Cancela a qualquer momento durante os 7 dias e não pagas nada.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-dark" id="faq">
+    <div class="container container-sm">
+      <div class="section-header">
+        <span class="section-tag">FAQ</span>
+        <h2>Perguntas frequentes</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">
+            Como funciona o período de teste gratuito?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Ao subscrever qualquer plano tens 7 dias completamente grátis. Precisamos do teu cartão para ativar o trial, mas <strong>não cobramos nada</strong> durante esse período. Se cancelares antes do fim dos 7 dias, não pagas absolutamente nada.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Quando chegam as notícias?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Assim que detetamos uma notícia relevante nas nossas fontes, o agente resume e envia direto para o teu Telegram, sem esperares.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Posso mudar de tema após subscrever?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Sim. No bot do Telegram podes gerir os teus temas a qualquer momento com o comando <code>/topics</code>. No plano Basic podes trocar de tema; no plano Pro podes adicionar quantos quiseres.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Posso cancelar a qualquer momento?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Sim, sempre. Basta usar o comando <code>/cancel</code> no bot. Se cancelares durante o trial, não pagas nada. Se cancelares depois, o acesso mantém-se até ao fim do período já pago.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Em que língua são as notícias?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>As notícias são enviadas em <strong>português de Portugal</strong>. O nosso agente traduz e resume tudo automaticamente, mesmo quando as fontes originais estão em inglês.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Quantas notícias recebo por dia?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Depende do tema e do dia. O nosso agente filtra as notícias por relevância e só enviamos o que realmente importa. Não tens caixas de entrada a abarrotar, tens informação com qualidade.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="section cta-section">
+    <div class="container container-sm cta-inner">
+      <h2>Pronto para estar sempre informado?</h2>
+      <p>Junta-te ao GYN e recebe as notícias que importam, sem esforço.</p>
+      <a href="https://t.me/GetYourNews_GYNBot" target="_blank" class="btn btn-primary btn-lg">
+        Experimentar grátis · 7 dias
+      </a>
+      <p class="cta-note">Sem compromisso · Cancela quando quiseres</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="logo">GYN<span class="logo-dot">.</span></a>
+        <p>As notícias que importam,<br />entregues no teu Telegram.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Produto</h4>
+          <a href="#como-funciona">Como funciona</a>
+          <a href="#temas">Temas</a>
+          <a href="#precos">Preços</a>
+        </div>
+        <div class="footer-col">
+          <h4>Suporte</h4>
+          <a href="#faq">FAQ</a>
+          <a href="https://t.me/GetYourNews_GYNBot" target="_blank">Bot Telegram</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="ano-atual"></span> Get Your News. Todos os direitos reservados.</span>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
