@@ -848,8 +848,19 @@ code {
   background: var(--bg-card);
 }
 
+.faq-answer a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: opacity var(--transition);
+}
+
+.faq-answer a:hover {
+  opacity: 0.8;
+}
+
 .faq-item.open .faq-answer {
-  max-height: 300px;
+  max-height: 500px;
 }
 
 /* =============================================
@@ -907,6 +918,7 @@ code {
 
 .footer-links {
   display: flex;
+  flex-wrap: wrap;
   gap: 48px;
 }
 
