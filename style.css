@@ -438,6 +438,14 @@ code {
   margin-bottom: 12px;
 }
 
+.tg-msg-list {
+  padding-left: 18px;
+}
+
+.tg-msg-list li {
+  margin-bottom: 4px;
+}
+
 .tg-msg-footer {
   font-size: 0.72rem;
   color: var(--text-dim);
