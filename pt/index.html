@@ -42,6 +42,7 @@
     document.querySelectorAll('a[href*="t.me/GetYourNews_GYNBot"]').forEach(function(link) {
       link.addEventListener('click', function() {
         fbq('trackCustom', 'BotClick');
+        fbq('track', 'Lead');
       });
     });
   });
